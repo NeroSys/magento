@@ -1,0 +1,40 @@
+<?xml version="1.0"  ?>
+<config>
+    <modules>
+        <NeRo_News>
+            <version>1.0.0</version>
+        </NeRo_News>
+    </modules>
+    <global>
+        <models>
+            <news>
+                <class>NeRo_News_Model</class>
+                <resourceModel>news_resource</resourceModel>
+            </news>
+            <news_resource>
+                <class>NeRo_News_Model_Resource</class>
+                <entities>
+                    <block>
+                        <table>nero_news</table>
+                    </block>
+                </entities>
+            </news_resource>
+        </models>
+        <resources>
+            <news_setup>
+                <setup>
+                    <module>NeRo_News</module>
+                </setup>
+            </news_setup>
+        </resources>
+    </global>
+    <frontend>
+
+    </frontend>
+    <admin>
+
+    </admin>
+    <default>
+
+    </default>
+</config>
