@@ -29,10 +29,26 @@
         </resources>
     </global>
     <frontend>
-
+        <routers>
+            <news>
+                <use>standard</use>
+                <args>
+                    <module>NeRo_News</module>
+                    <frontName>news</frontName>
+                </args>
+            </news>
+        </routers>
     </frontend>
     <admin>
-
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <news before="Mage_Adminhtml">NeRo_News_Adminhtml</news>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
     </admin>
     <default>
 
