@@ -27,6 +27,11 @@
                 </setup>
             </news_setup>
         </resources>
+        <helpers>
+            <news>
+                <class>NeRo_News_Helper</class>
+            </news>
+        </helpers>
     </global>
     <frontend>
         <routers>
@@ -38,6 +43,15 @@
                 </args>
             </news>
         </routers>
+        <translate>
+            <modules>
+                <NeRo_News>
+                    <files>
+                        <default>NeRo_News.csv</default>
+                    </files>
+                </NeRo_News>
+            </modules>
+        </translate>
     </frontend>
     <admin>
         <routers>

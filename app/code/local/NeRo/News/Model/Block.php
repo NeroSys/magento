@@ -13,6 +13,17 @@ class NeRo_News_Model_Block extends Mage_Core_Model_Abstract
         parent::_construct();
 
         $this->_init('news/block');
+
+//        if (Mage::helper('news')->isModuleOutputEnabled()){
+//
+//
+//        }
+
+        echo Mage::helper('news')->__('news');
+//        if we need to use helper with arrays working we have to do
+
+//        echo Mage::helper('news/arrays)->
+//        через слэш указываем вызов хелпера не дефолтного.
     }
 
 }
